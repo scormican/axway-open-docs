@@ -7,7 +7,7 @@
 }
 
 API Gateway interacts with the following directory servers using the Lightweight Directory Access Protocol (LDAP):
-
+test
 * Apache Directory Server 2.0.0-M7
 * IBM Security Directory Server 6.4.0
 * Microsoft Active Directory 2012
