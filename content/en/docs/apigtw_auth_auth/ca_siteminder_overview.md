@@ -6,7 +6,7 @@
 "description": "Configure API Gateway to authenticate and authorize end users using CA SiteMinder."
 }
 
-Testtesttesttesttest
+Testtesttesttesttesttest
 
 CA SiteMinder is a centralized web access management system that provides user authentication and single sign-on, policy-based authorization, identity federation, and auditing of access to web applications and portals.
 
