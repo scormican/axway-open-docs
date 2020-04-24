@@ -79,7 +79,7 @@ This release has the following limitations:
 
 ## Fixed issues
 
-See [Fixed issues](/docs/apim_relnotes/20200130_apip_relnotes/fixed_issues/) for a complete list.
+See [Fixed issues](/docs/apim_relnotes/apip_cumulativeissues/apip_relnotes_cumulativeissues/) for a complete list.
 
 ## Known issues
 

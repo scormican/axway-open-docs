@@ -1,16 +1,16 @@
 ---
-title: Fixed issues
-linkTitle: Fixed issues
+title: API Portal fixed issues
+linkTitle: API Portal fixed issues
 weight: 5
 date: 2019-08-08T00:00:00.000Z
-description: Listing of fixed issues in this release of API Portal.
+description: Listing of cumulative fixed issues in API Portal releases.
 ---
 
 This version of API Portal includes the fixes from all 7.5.5, 7.6.2, and 7.7 service packs or updates released prior to this version. For details of all the service pack fixes included, see the corresponding SP Readme attached to each service pack on [Axway Support](https://support.axway.com).
 
-## Fixed security vulnerabilities
+## January 2020
 
-<!-- TODO copy and paste the list from confluence -->
+### Fixed security vulnerabilities January 2020
 
 | Internal ID   | Case ID            | Description             |
 | ------------ | ------------------ | -----------------------|
@@ -26,9 +26,7 @@ This version of API Portal includes the fixes from all 7.5.5, 7.6.2, and 7.7 ser
 | IAP-2879     |                    | **Issue**: URL builder library introduced XSS-vulnerable strings. **Resolution**: XSS-introducing characters are escaped in URL builder library.                                                                |
 | IAP-2705     | 01090752, 01090952 | **Issue**: Buffer overflow may occur in API Try It page. **Resolution**: Unnecessary regular expression check is removed, and concerned query parameters are properly cast.                                                   |
 
-## Other fixed issues
-
-<!-- TODO copy and paste the list from confluence -->
+### Other fixed issues January 2020
 
 | Internal ID | Case ID            | Description                                                                                                                                                                                                                                                                                                                                                                                                     |
 | ------------ | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -71,3 +69,24 @@ This version of API Portal includes the fixes from all 7.5.5, 7.6.2, and 7.7 ser
 | IAP-2874     | 1113649            | **Issue**: Results string in API Catalog couldn't be translated. **Resolution**: Result string is now translatable.                                                                                                                                                                                                                                                                                          |
 | IAP-2916     |                    | **Issue**: when there are 2 API Catalogs and APIs are restricted by "Show only APIs with tags" with non-existing tags for only one of catalogs, error 302 appears on API Catalog page. **Resolution**: with 2 API Catalogs and APIs restricted by "Show only APIs with tags" with non existing tags API Catalog lists all APIs                                                                               |
 | IAP-2935     |                    | **Issue**: Edit Profile menu item is unpublished on fresh install. **Resolution**: Edit Profile menu item is published on fresh install.                                                                                                                                                                                                                                                                     |
+
+## March 2020
+
+### Fixed security vulnerabilities March 2020
+
+| Internal ID | Case ID | Description                                                                                                                                                                                     |
+| ----------- | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| IAP-3082    |         | **Issue:** `node-sass` package is vulnerable to uncontrolled recursion. **Resolution:** `node-sass` was moved to development packages.                                                          |
+| IAP-2878    |         | **Issue**: XSS vulnerability because arbitrary (non-existing) URIs can be accepted with `Itemid` query parameter. **Resolution**: *Page Not Found* is shown when non-existing URI is requested. |
+
+### Other fixed issues March 2020
+
+| Internal ID | Case ID  | Description                                                                                                                                                                                                                                      |
+| ----------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| IAP-2741    |          | **Issue**: There were two query parameters with same value on Try It page (itemId and menuId). **Resolution**: `menuId` is removed in favor of `itemId`.                                                                                    |
+| IAP-2871    | 1106851  | **Issue**: Users are unexpectedly logged out and redirected to the Sign In page after password change. **Resolution**: Users are informed that they will be logged out after successful password change, and a result message is displayed. |
+| IAP-2952    |          | **Issue**: While testing endpoints, when the Content-Type is set to application/octet-stream the upload of files is not possible. **Resolution**: Files are always uploaded successfully despite the Content-Type header.                  |
+| IAP-3075    |          | **Issue**: Users are not redirected to login page when they try a request with expired session due to legacy authentication mechanism. **Resolution**: The legacy authentication mechanism is replaced with the newest possible.                 |
+| IAP-3121    |          | **Issue**: SwaggerUI cannot render when OAS 3.0 definitions have missing *component* key. **Resolution**: The *component* key is first checked for existence, and then used.                                                                     |
+| IAP-3132 | | **Issue:** PHP version requirements are not specific. **Resolution:** Added clarification to the documentation that PHP 7.4 is supported after Jan20 version and in API Portal 7.6.2 the supported versions for PHP are from 7.1 to 7.3. |
+| IAP-3139    | 01140234 | **Issue**: There was a blank space between site navigation and page title when system messages were closed. **Resolution**: Container of system messages is removed when all of messages are closed. |
