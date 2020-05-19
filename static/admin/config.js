@@ -392,14 +392,14 @@ const collections = [{
   folder: 'content/en/blog/friends',
 }];
 
-const { MY_CMS_BRANCH } = process.env.BRANCH;
+window.MY_CMS_BRANCH = process.env.BRANCH;
 
 const config = {
   backend: {
     name: 'github',
     repo: 'Axway/axway-open-docs', //Path to your GitHub repository. For fork testing use alexearnshaw/axway-open-docs.
     open_authoring: true,
-    branch: MY_CMS_BRANCH || "master",
+    branch: window.MY_CMS_BRANCH || "master",
   },
   publish_mode: 'editorial_workflow',
   media_folder: '/static/Images', // Media files will be stored in the repo under static/Images
