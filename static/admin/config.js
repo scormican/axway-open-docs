@@ -397,6 +397,7 @@ const config = {
     name: 'github',
     repo: 'Axway/axway-open-docs', //Path to your GitHub repository. For fork testing use alexearnshaw/axway-open-docs.
     open_authoring: true,
+    branch: process.env.BRANCH || "master",
   },
   publish_mode: 'editorial_workflow',
   media_folder: '/static/Images', // Media files will be stored in the repo under static/Images
