@@ -34,3 +34,10 @@ command = "cd themes/docsy && git submodule update -f --init && cd ../.. && hugo
   force = true
   headers = {X-From = "Netlify"}
 
+[[redirects]]
+  from = "/test/central/*"
+  to = "/docs/central:splat"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}
+
