@@ -21,15 +21,15 @@ command = "cd themes/docsy && git submodule update -f --init && cd ../.. && hugo
   port = 1314
 
 [[redirects]]
-  from = "/docs/central"
-  to = "https://amplifycentral-open-docs.netlify.app/docs/central"
+  from = "/docs/central/*"
+  to = "https://amplifycentral-open-docs.netlify.app/docs/central:splat"
   status = 200
   force = true
   headers = {X-From = "Netlify"}
 
 [[redirects]]
-  from = "/docs/catalog"
-  to = "https://amplifycentral-open-docs.netlify.app/docs/catalog"
+  from = "/docs/catalog/*"
+  to = "https://amplifycentral-open-docs.netlify.app/docs/catalog:splat"
   status = 200
   force = true
   headers = {X-From = "Netlify"}
