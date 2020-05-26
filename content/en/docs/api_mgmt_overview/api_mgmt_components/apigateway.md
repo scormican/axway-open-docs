@@ -1,5 +1,5 @@
 {
-"title": "Introduction to API Gateway",
+"title": "Introduction to API gateway",
 "linkTitle": "API Gateway",
 "weight":"20",
 "date": "2020-04-14",
