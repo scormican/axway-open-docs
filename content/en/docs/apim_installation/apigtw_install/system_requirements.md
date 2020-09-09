@@ -96,7 +96,7 @@ API Gateway and API Manager support the following relational databases to store 
 
 * MySQL Server 5.6, 5.7
 * MariaDB 5.5, 10.1
-* Microsoft SQL Server 2012, 2014
+* Microsoft SQL Server 2016, 2017, 2019
 * Oracle 11.2, 12.1
 * IBM DB2 10.5
 
